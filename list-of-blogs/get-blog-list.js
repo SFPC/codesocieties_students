@@ -1,12 +1,3 @@
-
-// How to use:
-//
-// Be sure to add a <div id='sfpc-marquee'></div> somewhere on your page
-// and then you can add <script src='https://raw.githubusercontent.com/SFPC/codesocieties_students/master/list-of-blogs/get-blog-list.js'></script>
-// at the bottom of your  of your <head> tag! Ping @matt if you have any questions
-//
-
-
 function httpGetAsync(theUrl, callback)
 {
     var xmlHttp = new XMLHttpRequest();
