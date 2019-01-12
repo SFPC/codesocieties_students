@@ -24,18 +24,41 @@
       <p>maybe we can also auto publish to a github pages site?</p>
       <p>suggestions? comments?</p>
     </div>
-
-    <div class="friendz">
+    <div id="sfpc-marquee">
       <p>code societies friendz</p>
-      <a href="http://www.ohagan.co/pondering">pondering</a> <br>
-      <a href="dat://78a7fec761be2dd5d4e4a8c5539cba648c1331a2b4a629a12dcb384616e8e9bb/">a sparse city</a>
-    </div>
-  
+    </div>  
   </body>
 
   <script type="application/javascript" src="script.js"></script>
 
   <script>
     console.log('Hello from the console!')
+    function httpGetAsync(theUrl, callback)
+    {
+        var xmlHttp = new XMLHttpRequest();
+        xmlHttp.onreadystatechange = function() {
+            if (xmlHttp.readyState == 4 && xmlHttp.status == 200)
+                callback(xmlHttp.responseText);
+        }
+        xmlHttp.open("GET", theUrl, true); // true for asynchronous
+        xmlHttp.send(null);
+    }
+
+    httpGetAsync('https://raw.githubusercontent.com/mattohagan/sfpc-marquee/master/blogs.json', function(response){
+      console.log(response);
+      let json = JSON.parse(response);
+      let blogs = json.blogs;
+
+      let html = ''
+      for(let i = 0; i < blogs.length; i++){
+        console.log(blogs[i]);
+        let element = "<a href='" + blogs[i].url + "'>" + blogs[i].title + "</a>";
+        html += element;
+        html += "<br>";
+      }
+
+      let sfpcElement = document.getElementById('sfpc-marquee');
+      sfpcElement.innerHTML = html;
+    });
   </script>
 </html>
