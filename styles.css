@@ -1,0 +1,26 @@
+body {
+  padding: 0 20px;
+  font-family: monospace;
+  background: #FFA500;
+  color: white;
+  font-size: 1em;
+}
+
+p {
+  font-size: 1.25em;
+}
+
+.friendz {
+  background: transparent;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  padding: 20px;
+}
+
+a {
+  display: block;
+  color: white;
+  font-size: 1.125em;
+  margin-bottom: 5px;
+}
