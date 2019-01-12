@@ -14,3 +14,7 @@ once you have access to this repo you can run the following commands in a termin
 8. git add -A (to add any newly created files)
 9. git commit -am "your message"
 10. git push origin master
+
+if you already have the repo on your computer make sure to run the following commands before making changes:
+1. git fetch origin (this will download all of the latest changes from the repository)
+2. git reset --hard origin/master (this will write all of those changes into your local version of the repository)
