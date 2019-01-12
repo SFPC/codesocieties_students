@@ -15,7 +15,7 @@
       <p><em>some initial thoughts:</em></p>
       <p>what does a cooperative web page look like? curious about what happens when we simultaneously write code inside of this index.html file</p>
     </div>
-    
+
     <div>
       <p><em>potential publishing flow:</em></p>
       <p>each day students can update/ add files to this github repository</p>
@@ -27,41 +27,11 @@
 
     <div class="friendz">
       <p>code societies friendz</p>
-      <div id="sfpc-marquee"></div> 
+      <div id="sfpc-marquee"></div>
     </div>
- 
+
   </body>
 
   <script type="application/javascript" src="script.js"></script>
-
-  <script>
-    console.log('Hello from the console!')
-    function httpGetAsync(theUrl, callback)
-    {
-        var xmlHttp = new XMLHttpRequest();
-        xmlHttp.onreadystatechange = function() {
-            if (xmlHttp.readyState == 4 && xmlHttp.status == 200)
-                callback(xmlHttp.responseText);
-        }
-        xmlHttp.open("GET", theUrl, true); // true for asynchronous
-        xmlHttp.send(null);
-    }
-
-    httpGetAsync('https://raw.githubusercontent.com/mattohagan/sfpc-marquee/master/blogs.json', function(response){
-      console.log(response);
-      let json = JSON.parse(response);
-      let blogs = json.blogs;
-
-      let html = ''
-      for(let i = 0; i < blogs.length; i++){
-        console.log(blogs[i]);
-        let element = "<a href='" + blogs[i].url + "'>" + blogs[i].title + "</a>";
-        html += element;
-        html += "<br>";
-      }
-
-      let sfpcElement = document.getElementById('sfpc-marquee');
-      sfpcElement.innerHTML = html;
-    });
-  </script>
+  <script src='https://raw.githubusercontent.com/SFPC/codesocieties_students/master/list-of-blogs/get-blog-list.js'></script>
 </html>
