@@ -16,6 +16,7 @@ p {
   right: 0;
   bottom: 0;
   padding: 20px;
+  border: 4px solid white;
 }
 
 a {
