@@ -4,17 +4,28 @@ body {
   background: #FFA500;
   color: white;
   font-size: 1em;
+  height: 100vh;
+  overflow: hidden;
 }
 
 p {
   font-size: 1.25em;
 }
 
+.sticky {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  overflow: scroll;
+  width: 100%;
+}
+
 .friendz {
   background: transparent;
   position: fixed;
   right: 0;
-  bottom: 0;
+  bottom: 30%;
   padding: 20px;
   border: 4px solid white;
 }
@@ -25,3 +36,316 @@ a {
   font-size: 1.125em;
   margin-bottom: 5px;
 }
+
+.home {
+  padding: 10px;
+}
+
+.home img {
+  display: block;
+  width: 30%;
+  position: absolute;
+  right: 120px;
+  bottom: 40px;
+}
+
+.it-begins {
+  padding: 200px 120px;
+  width: 80%;
+}
+
+.homepage-as-ethics img {
+  display: block;
+  margin-bottom: 230px;
+  width: 50%;
+}
+
+.ree-1 {
+  position: absolute;
+  top: 30%;
+  right: 80%;
+  width: 20%;
+}
+
+.ree-2 {
+  position: absolute;
+  top: 5%;
+  right: 65%;
+  width: 20%;
+}
+
+.ree-3 {
+  position: absolute;
+  top: 30%;
+  right: 45%;
+  width: 20%;
+}
+
+.ree-4 {
+  position: absolute;
+  top: 30%;
+  right: 20%;
+  width: 20%;
+}
+
+.ree-5 {
+  position: absolute;
+  top: 35%;
+  right: 45%;
+  width: 20%;
+}
+
+.ree-hol-1 {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  width: 20%;
+}
+
+.ree-hol-2 {
+  position: absolute;
+  top: 25%;
+  left: 45%;
+  width: 20%;
+}
+
+.ree-hol-3 {
+  position: absolute;
+  top: 80%;
+  left: 15%;
+  width: 20%;
+}
+
+.ree-hol-4 {
+  position: absolute;
+  top: 50%;
+  left: 90%;
+  width: 20%;
+}
+
+.ree-hol-5 {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  width: 20%;
+}
+
+.markdown-syllabus {
+  background: black;
+  color: white;
+  position: absolute;
+  overflow: scroll;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 96%;
+}
+
+.markdown-syllabus.computational-scrawl {
+  background: blue;
+  width: 90%;
+}
+
+.folder-narrative-screenshot {
+  display: block;
+  margin-bottom: 16px;
+  width: 94%;
+}
+
+.auto-writing {
+  display: block;
+  margin-bottom: 16px;
+}
+
+.auto-writing-ss {
+  display: block;
+}
+
+.auto-writing-ss:first-child() {
+  margin-left: 60%;
+}
+
+.auto-writing-ss:nth-child(even) {
+  width: 90%;
+}
+
+.distributed-web {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.distributed-web img {
+  display: block;
+  margin-bottom: 12px;
+  width: 20%;
+  padding: 5px;
+  -webkit-clip-path: polygon(50% 0%, 80% 10%, 78% 35%, 100% 70%, 80% 90%, 50% 100%, 30% 80%, 0% 70%, 5% 43%, 20% 10%);
+  clip-path: polygon(50% 0%, 80% 10%, 78% 35%, 100% 70%, 80% 90%, 50% 100%, 30% 80%, 0% 70%, 5% 43%, 20% 10%);
+}
+
+.distributed-web img:nth-child(odd) {
+  -webkit-clip-path: polygon(50% 0%, 70% 18%, 95% 12%, 100% 70%, 80% 90%, 51% 77%, 18% 98%, 0% 70%, 4% 21%, 20% 10%);
+  clip-path: polygon(50% 0%, 70% 18%, 95% 12%, 100% 70%, 80% 90%, 51% 77%, 18% 98%, 0% 70%, 4% 21%, 20% 10%);
+  width: 38%;
+}
+
+.wyfy img {
+  display: block;
+  width: 70%;
+}
+
+.wyfy p {
+  background-color: darkslategrey;
+}
+
+.asemic img {
+  display: block;
+  margin-bottom: 40px;
+  width: 50%;
+}
+
+.ethicsware img {
+  display: block;
+  margin-bottom: 80px;
+  width: 70%;
+}
+
+.ethicsware p {
+  background-color: deeppink;
+  width: 85%;
+  margin-bottom: 40px;
+}
+
+.layer-of-earth.five p {
+  background-color: brown;
+  font-size: 2em;
+  position: absolute;
+  left: 0px;
+  z-index: 30;
+  width: 96%;
+  padding: 20px;
+  bottom: 20%;
+}
+
+.ethicsware p:nth-child(odd) {
+  font-size: 3em;
+}
+
+.cybernetics-of-sex {
+  z-index: 32;
+}
+
+.cybernetics-of-sex img {
+  display: block;
+  width: 80%;
+  margin: 0px 0 30px 98px;
+}
+.we-play-programmed {
+  z-index: 33;
+}
+.we-play-programmed p {
+  background-color: crimson;
+  font-size: 2em;
+  width: 88%;
+  padding: 20px;
+}
+.we-play-programmed img {
+  display: block;
+  width: 30%;
+  margin-bottom: 30px;
+}
+pre {
+  padding: 20px;
+  width: 100%;
+  white-space: pre-line;
+  max-width: 80%;
+  word-wrap: break-word;
+}
+
+.layer-of-earth {
+  width: 100%;
+  overflow: hidden;
+  height: 100vh;
+}
+
+.ree-ter-1 {
+  position: absolute;
+  top: 10%;
+  left: 20%;
+  width: 30%;
+}
+
+.ree-ter-2 {
+  position: absolute;
+  top: 15%;
+  left: 65%;
+  width: 24%;
+}
+
+.ree-ter-3 {
+  position: absolute;
+  top: 90%;
+  left: 85%;
+  width: 30%;
+}
+
+.ree-ter-4 {
+  position: absolute;
+  top: 40%;
+  left: 3%;
+  width: 24%;
+}
+
+.ree-ter-5 {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  width: 25%;
+}
+
+.ree-ter-6 {
+  position: absolute;
+  top: 45%;
+  left: 35%;
+  width: 25%;
+}
+
+.ree-ter-7 {
+  position: absolute;
+  top: 75%;
+  left: 25%;
+  width: 35%;
+}
+
+.ree-ter-8 {
+  position: absolute;
+  top: -10%;
+  left: 1%;
+  width: 15%;
+}
+
+.ree-ter-9 {
+  position: absolute;
+  top: 45%;
+  left: 75%;
+  width: 25%;
+}
+
+.ree-ter-10 {
+  position: absolute;
+  top: 1%;
+  right: 5%;
+  width: 30%;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+
