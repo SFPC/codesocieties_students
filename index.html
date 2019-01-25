@@ -27,6 +27,8 @@
         left: 0;
         height: 100%;
         overflow: scroll;
+        -webkit-overflow-scrolling: touch;
+        cursor: nw-resize;
         width: 100%;
       }
 
@@ -140,7 +142,6 @@
       }
 
       .markdown-syllabus {
-        background: black;
         color: white;
         position: absolute;
         overflow: scroll;
@@ -148,23 +149,19 @@
         top: 0;
         left: 0;
         right: 0;
-        width: 96%;
+        width: 100%;
       }
 
-      .markdown-syllabus.computational-scrawl {
-        background: blue;
-        width: 90%;
-      }
-
-      .markdown-syllabus.floating-data-with-everest-pipkin {background-color: brown; width: 80%;}
-      .markdown-syllabus.distributed-web-with-taeyoon-choi {background-color: lightseagreen; width: 70%;}
-      .markdown-syllabus.wyfy-with-bufu {background-color:darkorchid; width: 88%;}
-      .markdown-syllabus.ethicsware-with-dan-taeyoung {background-color: coral; width: 45%;}
-      .markdown-syllabus.cybernetics-of-sex-with-melanie-hoff {background-color: darkslateblue; width: 67%;}
-      .markdown-syllabus.we-play-programmed-with-fluct {background-color: red; width: 73%;}
-      .markdown-syllabus.terraforming-with-ingrid-burrington {background-color: blue; width: 65%;}
-      .markdown-syllabus.software-as-ideology-with-american-artist {background-color: green; width: 62%;}
-      .markdown-syllabus.critical-simulation-with-nora-khan {background-color: orangered; width: 44%;}
+      .markdown-syllabus.computational-scrawl pre { background: blue; width: 90%; margin-top: 30px; }
+      .markdown-syllabus.floating-data-with-everest-pipkin pre {background-color: brown; width: 80%;margin-top: 5px;}
+      .markdown-syllabus.distributed-web-with-taeyoon-choi pre {background-color: lightseagreen; width: 70%;margin-top: 0;}
+      .markdown-syllabus.wyfy-with-bufu pre {background-color:darkorchid; width: 88%;margin-top: 50px;}
+      .markdown-syllabus.ethicsware-with-dan-taeyoung pre {background-color: coral; width: 45%;margin-top: 90px;}
+      .markdown-syllabus.cybernetics-of-sex-with-melanie-hoff pre {background-color: darkslateblue; width: 67%;margin-top: 20px;}
+      .markdown-syllabus.we-play-programmed-with-fluct pre {background-color: red; width: 73%;margin-top: 65px;}
+      .markdown-syllabus.terraforming-with-ingrid-burrington pre {background-color: blue; width: 65%;margin-top: 85px;}
+      .markdown-syllabus.software-as-ideology-with-american-artist pre {background-color: green; width: 62%;margin-top: 48px;}
+      .markdown-syllabus.critical-simulation-with-nora-khan pre {background-color: orangered; width: 44%;margin-top: 8px;}
 
       .folder-narrative-screenshot {
         display: block;
@@ -224,7 +221,13 @@
         margin-bottom: 40px;
         width: 50%;
       }
-
+      .asemic img:first-child {
+        width: 100%;
+      }
+      .asemic img:nth-child(3){
+        width: 30%;
+        margin-left: 50%;
+      }
       .ethicsware img {
         display: block;
         margin-bottom: 80px;
@@ -284,6 +287,7 @@
         margin-bottom: 30px;
         margin-top: 90px;
       }
+
       .nabil-thought p {
         background-color: olivedrab;
         font-size: 4em;
@@ -293,14 +297,19 @@
         margin-bottom: 300px;
         margin-left: 20px;
       }
+
       .ephemera {
         padding: 3px;
-        width: 35%;
+        width: 100%;
       }
 
       .ephemera img {
-        width: 100%;
+        width: 35%;
       }
+
+      .ephemera.whiteboard img { margin-top: 33%; margin-left: 33%; width: 60%; margin-bottom: 400px;}
+      .ephemera.slack-message img {margin-top: 16%; margin-left: 13%; width: 40%; margin-bottom: 500px; }
+      .ephemera.rock-photo img { margin-top: 43%; margin-left: 53%; width: 45%; }
 
       .software-as-ideology img:first-child {
         display: block;
@@ -315,7 +324,7 @@
         display: block;
         width: 80%;
         margin-left: 20%;
-        margin-bottom: 300px;
+        margin-bottom: 100px;
         margin-top: 20%;
       }
       
@@ -933,7 +942,6 @@
       <img class="dat-zine-screenshot" alt="screen shot of collective dat zine archive" src="ephemera/group-dat-zine-ss7.png" />
     </section>
 
-
     <section tabindex="0" class="markdown-syllabus distributed-web-with-taeyoon-choi sticky poetic-edge">
       <pre>
         Distributed Web of Care
@@ -1138,7 +1146,6 @@
       <img class="auto-writing-ss" alt="screenshot of asemic writing" src="ephemera/allison-asemic-writing.jpg" />
       <img class="auto-writing-ss" alt="screenshot of automatic writing by matt" src="ephemera/matt-automatic-writing.png" />
     </section>
-
 
     <section tabindex="0" class="markdown-syllabus ethicsware-with-dan-taeyoung sticky poetic-edge">
       <pre>
@@ -1545,6 +1552,10 @@
       </pre>
     </section>
 
+    <section tabindex="0" class="ephemera sticky poetic-edge">
+      <img alt="screenshot of video of bjork talking about her TV" src="ephemera/emily-slack-link.png"/>
+    </section>
+
     <section tabindex="0" class="software-as-ideology sticky poetic-edge">
       <!--  software as ideology -->
       <img alt="reference: The Glass Universe" src="ephemera/glass-universe.png" />
@@ -1596,6 +1607,10 @@
         Technological University
         Eindhoven, The Netherlands
       </pre>
+    </section>
+
+    <section tabindex="0" class="ephemera rock-photo sticky poetic-edge">
+      <img alt="photo of rocks that ingrid burrington brought to class" src="ephemera/ingrid-rocks.png"/>
     </section>
 
     <section tabindex="0" class="markdown-syllabus critical-simulation-with-nora-khan sticky poetic-edge">
@@ -1655,6 +1670,10 @@
         Lars TCF Holdhus: Variable World: A Symposium on Simulation: https://www.youtube.com/watch?v=E890ufCcJW4
 
       </pre>
+    </section>
+
+    <section tabindex="0" class="ephemera slack-message sticky poetic-edge">
+      <img alt="screenshot of message from jarrett which reads: will bioengineering become the hot new trend? first juuling, now this?" src="ephemera/jarrett-slack.png"/>
     </section>
 
     <section tabindex="0" class="critical-simulation sticky poetic-edge">
@@ -1722,6 +1741,10 @@ tried to keep the body but express the idea of being systems
       </pre>
 
     </section>
+
+    <section tabindex="0" class="ephemera whiteboard sticky poetic-edge">
+      <img alt="photo of a whiteboard with a few of our computation as environment metaphors, including words like infrastructure, supply chain, horizon, a construct" src="ephemera/computation-as-environment.png"/>
+    </section>
   </body>
 
   <script type="application/javascript">
@@ -1749,7 +1772,7 @@ tried to keep the body but express the idea of being systems
         body.classList.add('time-traveling-towards-the-future');
       }
       // if i is equal to 18 this means that a person has clicked back through the to first section of the HTML so the class time-traveling-towards-the-future is being removed and the class time-traveling-towards-the-past is being added.
-      if (i === poeticEdges.length && body.classList.contains('time-traveling-towards-the-future')) {
+      if (i === poeticEdges.length - 1 && body.classList.contains('time-traveling-towards-the-future')) {
         body.classList.remove('time-traveling-towards-the-future');
         body.classList.add('time-traveling-towards-the-past');
       }
